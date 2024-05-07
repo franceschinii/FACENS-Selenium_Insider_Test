@@ -1,0 +1,450 @@
+{
+  "id": "c60e126a-d4a2-42d8-9853-28e2f5c6984b",
+  "version": "2.0",
+  "name": "InsiderTest",
+  "url": "https://www.insiderstore.com.br",
+  "tests": [{
+    "id": "16cc6626-5f7b-4db6-8388-9421db715c13",
+    "name": "TesteLogin",
+    "commands": [{
+      "id": "3c033483-fb83-4ff6-94e5-8fb1f4eb16c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49c09ec8-17a1-4a18-93cc-a76289163aec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "839be7d4-09cd-4070-ba1f-54dd60926dea",
+      "comment": "",
+      "command": "click",
+      "target": "id=Path_967",
+      "targets": [
+        ["id=Path_967", "id"],
+        ["css=#Path_967", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3e45245-cf78-456a-925a-edbb95e570a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=CustomerEmail",
+      "targets": [
+        ["id=CustomerEmail", "id"],
+        ["name=customer[email]", "name"],
+        ["css=#CustomerEmail", "css:finder"],
+        ["xpath=//input[@id='CustomerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60d65341-aa19-4dcb-aa3a-9ca82b2abee6",
+      "comment": "",
+      "command": "type",
+      "target": "id=CustomerEmail",
+      "targets": [
+        ["id=CustomerEmail", "id"],
+        ["name=customer[email]", "name"],
+        ["css=#CustomerEmail", "css:finder"],
+        ["xpath=//input[@id='CustomerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "testedanielohata@gmail.com"
+    }, {
+      "id": "8a063881-b2b4-4e33-b71b-77e7016cbe61",
+      "comment": "",
+      "command": "click",
+      "target": "id=CustomerPassword",
+      "targets": [
+        ["id=CustomerPassword", "id"],
+        ["name=customer[password]", "name"],
+        ["css=#CustomerPassword", "css:finder"],
+        ["xpath=//input[@id='CustomerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "052c589e-2bf6-419d-a57a-06227f1cc798",
+      "comment": "",
+      "command": "type",
+      "target": "id=CustomerPassword",
+      "targets": [
+        ["id=CustomerPassword", "id"],
+        ["name=customer[password]", "name"],
+        ["css=#CustomerPassword", "css:finder"],
+        ["xpath=//input[@id='CustomerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='customer_login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "senha123"
+    }, {
+      "id": "2b10a16d-68e9-43e8-8696-4949442bce0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=//form[@id='customer_login']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fazer login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9b164d0d-8457-466e-be13-7755f7e0356c",
+    "name": "TesteEsqueciSenha",
+    "commands": [{
+      "id": "01b4f055-26c9-46fd-8bd0-eac067fbe6dd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "810bc171-2fce-40f8-a15e-616f21806743",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ec33517-b1d9-43a3-944e-3d42b3872407",
+      "comment": "",
+      "command": "click",
+      "target": "id=Path_968",
+      "targets": [
+        ["id=Path_968", "id"],
+        ["css=#Path_968", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6195acfe-d20b-4ca0-832b-e4922ea52ab1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Esqueceu a senha?",
+      "targets": [
+        ["linkText=Esqueceu a senha?", "linkText"],
+        ["css=#customer_login > a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Esqueceu a senha?')]", "xpath:link"],
+        ["xpath=//form[@id='customer_login']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#recover')]", "xpath:href"],
+        ["xpath=//div[2]/form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Esqueceu a senha?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41fd3432-257a-4f27-818b-3bc3a406480e",
+      "comment": "",
+      "command": "click",
+      "target": "id=RecoverEmail",
+      "targets": [
+        ["id=RecoverEmail", "id"],
+        ["name=email", "name"],
+        ["css=#RecoverEmail", "css:finder"],
+        ["xpath=//input[@id='RecoverEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='shopify-section-template--17227371839637__main']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc306557-a7f9-42b0-b647-cdf9321fae55",
+      "comment": "",
+      "command": "type",
+      "target": "id=RecoverEmail",
+      "targets": [
+        ["id=RecoverEmail", "id"],
+        ["name=email", "name"],
+        ["css=#RecoverEmail", "css:finder"],
+        ["xpath=//input[@id='RecoverEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='shopify-section-template--17227371839637__main']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/form/div/input", "xpath:position"]
+      ],
+      "value": "testedanielohata@gmail.com"
+    }, {
+      "id": "11fb8a1f-39b9-4f4d-ab78-5cb261aa3b3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(2) > button",
+      "targets": [
+        ["css=form:nth-child(2) > button", "css:finder"],
+        ["xpath=//div[@id='shopify-section-template--17227371839637__main']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1c67ff5-c93e-4d6a-9d67-660b96cca0b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=//form[@id='customer_login']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fazer login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "67272484-0405-4ac9-8703-6dd6e1ed4ff4",
+    "name": "TesteLoginFacebook",
+    "commands": [{
+      "id": "81a40fb3-d3d9-4944-bb49-1438cafeeeea",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f89d1e9-d916-471f-ba70-4e339d2b05b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ceefcbb-4364-4c74-a983-510c29aee1af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f6ce640-d108-4989-bff8-05ea91618c47",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=9",
+      "targets": [
+        ["index=9"]
+      ],
+      "value": ""
+    }, {
+      "id": "adae7275-d806-4372-875f-9bbe7ea7106c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-facebook",
+      "targets": [
+        ["css=.fa-facebook", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8400",
+      "windowTimeout": 2000
+    }, {
+      "id": "7d0497e0-4b26-40f4-a8b4-fc91dbb0e01f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fedeed3-3aa4-4151-9654-8aa635967a5e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8400}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f1dc925-19dc-4d41-9bf5-fa7203c17e3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='email_container']/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18ff75c-c409-4437-ac33-53ce3d0a2ca1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "918749df-5726-49d9-8ec2-42eb0e2ca4a2",
+    "name": "TesteLoginGmail",
+    "commands": [{
+      "id": "30263549-56cc-468f-ad52-a63296bb456e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e37174a2-5b3f-4c08-abff-77d73e5e1874",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c753e8b-ebb7-437d-83a2-4fcb86528235",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff068c1-f229-4af5-9947-a23c818865d9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Criar conta",
+      "targets": [
+        ["linkText=Criar conta", "linkText"],
+        ["css=a:nth-child(7)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Criar conta')])[2]", "xpath:link"],
+        ["xpath=//form[@id='customer_login']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/account/register')])[2]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88c42444-0832-4075-9bfb-b95b27fde980",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Criar conta",
+      "targets": [
+        ["linkText=Criar conta", "linkText"],
+        ["css=a:nth-child(7)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Criar conta')])[2]", "xpath:link"],
+        ["xpath=//form[@id='customer_login']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/account/register')])[2]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af3cf6c2-84e2-4b49-93a8-974b96afd287",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=10",
+      "targets": [
+        ["index=10"]
+      ],
+      "value": ""
+    }, {
+      "id": "40780dd9-b475-4af1-800b-18bf360df8ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-google",
+      "targets": [
+        ["css=.fa-google", "css:finder"],
+        ["xpath=//li[2]/a/span/i", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7859",
+      "windowTimeout": 2000
+    }, {
+      "id": "1b4af963-21af-4cb4-b93a-206516573177",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76bb61c7-5f8a-45e1-b589-995e5000615f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7859}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "546a0465-c974-4e84-bdf4-d3b2581ac412",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6bbb0c7e-50ec-4439-b621-776892e681f7",
+    "name": "TesteSobreNós",
+    "commands": [{
+      "id": "42739a7b-0f24-4ac1-bed9-f09b34a751d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06238491-5f47-47b1-8d1b-f21a52577362",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d807f8d-f0af-443a-9ef8-2f3236bf085c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8053a7c2-0b4a-41ed-9cc9-1e05923c62dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "994f9416-f451-4459-8d8d-3c045b0c56c4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.icon-account",
+      "targets": [
+        ["css=.icon-account", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c83b31d9-08a9-44d0-a753-6e8fd0797a63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SOBRE NÓS",
+      "targets": [
+        ["linkText=SOBRE NÓS", "linkText"],
+        ["css=#Details-HeaderMenu-4 > .header__menu-item > .link", "css:finder"],
+        ["xpath=//a[contains(text(),'SOBRE NÓS')]", "xpath:link"],
+        ["xpath=//details[@id='Details-HeaderMenu-4']/summary/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.insiderstore.com.br/pages/sobre-a-insider')])[2]", "xpath:href"],
+        ["xpath=//li[5]/header-menu/details/summary/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SOBRE NÓS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "901a7e52-e444-40ff-be83-e3b7cc44a6c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["16cc6626-5f7b-4db6-8388-9421db715c13"]
+  }],
+  "urls": ["https://www.insiderstore.com.br/"],
+  "plugins": []
+}
