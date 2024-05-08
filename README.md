@@ -12,7 +12,7 @@ Este repositório é sobre a utilização do Selenium IDE, para criação de tes
 "Desde 2017, a Insider é parte de uma mudança significativa na indústria da moda, centrada em três pilares essenciais: tecnologia, design e sustentabilidade. A partir de uma ideia, acreditamos na criação de algo novo. A Undershirt foi lançada. Sete anos depois, a Insider é a maior marca de roupas essenciais com tecnologia do Brasil — mais de meio milhão de clientes em mais de 40 países."
 
 ## Vídeo no YouTube realizando testes
-- Link:
+- Link: https://drive.google.com/file/d/1BM8xOjVEg01f52jAE4k3LgoHKhHG0myb/view?usp=drive_link
 
 ## Pontos de cobertura de teste 
 Os testes realizados na tela de login são:
